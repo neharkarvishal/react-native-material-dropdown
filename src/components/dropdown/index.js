@@ -133,7 +133,7 @@ export default class Dropdown extends PureComponent {
     disabledItemColor: PropTypes.string,
     baseColor: PropTypes.string,
 
-    itemTextStyle: Text.propTypes.style,
+    itemTextStyle: PropTypes.any,
 
     itemCount: PropTypes.number,
     itemPadding: PropTypes.number,
@@ -188,7 +188,7 @@ export default class Dropdown extends PureComponent {
     };
   }
 
-  componentWillReceiveProps({ value }) {
+  UNSAFE_componentWillReceiveProps({ value }) {
     if (value !== this.props.value) {
       this.setState({ value });
     }

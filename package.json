@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "prop-types": "^15.5.9",
-    "react-native-material-buttons": "^0.5.0",
+    "react-native-material-buttons": "git+https://github.com/neharkarvishal/react-native-material-buttons.git#98524ba",
     "react-native-material-ripple": "^0.8.0",
     "react-native-material-textfield": "git+https://github.com/neharkarvishal/react-native-material-textfield.git"
   }
