@@ -1,3 +1,4 @@
+// removed UNSAFE_
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import {
@@ -188,7 +189,7 @@ export default class Dropdown extends PureComponent {
     };
   }
 
-  UNSAFE_componentWillReceiveProps({ value }) {
+  componentWillReceiveProps({ value }) {
     if (value !== this.props.value) {
       this.setState({ value });
     }
